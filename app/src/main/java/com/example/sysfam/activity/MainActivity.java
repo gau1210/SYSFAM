@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityNavegacaoBinding binding;
     private FirebaseAuth usuarioAutenticacao;
     private Toolbar toolbar;
+    private ImageButton botaoFarmacia;
 
 
     @Override
@@ -38,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityNavegacaoBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        botaoFarmacia = (ImageButton) findViewById(R.id.bt_farmacia);
+        botaoFarmacia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirTelaconsulta();
+            }
+        });
         usuarioAutenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         toolbar =(Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -92,5 +101,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
+    }
+    public void abrirTelaconsulta(){
+
+        Intent intent = new Intent(MainActivity.this, CunsultaActivity.class);
+        startActivity(intent);
     }
 }

@@ -7,7 +7,7 @@
     tools:context=".activity.ui.principal.PrincipalFragment" >
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/bt_farmacia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/farmacia"
