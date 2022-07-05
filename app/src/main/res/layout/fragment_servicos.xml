@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.ui.servicos.ServicosFragment" >
 
-    <TextView
-        android:id="@+id/textView3"
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sistema para o UBS"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="331dp"
-        android:layout_height="183dp"
-        android:text="A UBS Group AG é uma empresa de serviços financeiros com sede em Zurique, na Suíça, sendo uma das principais empresas globais de gestão de fortunas, banco de investimento, gestão e corretagem de valor…"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.05" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/lv_UBS"
+        android:layout_gravity="center_horizontal|top"/>
+</FrameLayout>

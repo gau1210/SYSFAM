@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         botaoFarmacia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abrirTelaconsulta();
+
             }
         });
         usuarioAutenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
@@ -101,10 +101,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
-    }
-    public void abrirTelaconsulta(){
-
-        Intent intent = new Intent(MainActivity.this, CunsultaActivity.class);
-        startActivity(intent);
     }
 }
