@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    abrirTelaPrincipal();
+                    abrirTelaValidacao();
                     Toast.makeText(LoginActivity.this,"Sucesso ao fazer login!",Toast.LENGTH_SHORT).show();
                 }else{
                     String erroExcecao = "";
@@ -84,6 +84,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void abrirTelaPrincipal(){
+
+        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+        startActivity(intent);
+        finish();
+
+    }
+    private void abrirTelaValidacao(){
 
         Intent intent = new Intent(LoginActivity.this, ValidacaoActivity.class);
         startActivity(intent);
