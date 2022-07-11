@@ -1,7 +1,6 @@
 package com.example.sysfam.helper;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 
@@ -23,22 +22,18 @@ public class Permissao {
             se já foi liberada.
              */
             for(String permissao : permissoes){
-
                boolean validaPermissao = ContextCompat.checkSelfPermission(activity,permissao) == PackageManager.PERMISSION_GRANTED;
-               if (!validaPermissao){
-                   listaPermissoes.add(permissao);
-               }
-               /*Caso a lista esteja vazia, não pe necessário solicitar a permissão*/
-               if (listaPermissoes.isEmpty()){
-                   return true;
-                   /*se não solicita*/
-               }else {
-                   String[] novasPermissoes = new String[listaPermissoes.size()];
-                   listaPermissoes.toArray(novasPermissoes);
-                   ActivityCompat.requestPermissions(activity,novasPermissoes,requestCode);
-               }
+               if (!validaPermissao) listaPermissoes.add(permissao);
             }
-        }
+               //Caso a lista esteja vazia, não pe necessário solicitar a permissão
+            if (listaPermissoes.isEmpty())
+                return true;
+                String[] novasPermissoes = new String[listaPermissoes.size()];
+                listaPermissoes.toArray(novasPermissoes);
+
+                //Se não solicita a permissão
+                ActivityCompat.requestPermissions(activity,novasPermissoes,requestCode);
+            }
         return true;
     }
 }
