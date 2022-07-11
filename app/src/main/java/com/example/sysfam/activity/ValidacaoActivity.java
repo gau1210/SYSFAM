@@ -12,7 +12,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,7 +66,7 @@ public class ValidacaoActivity extends AppCompatActivity {
                 Preferencias preferencias = new Preferencias(ValidacaoActivity.this);
                 preferencias.salvarUsuarioPreferencias(nomeUsuario,telefoneCompleto,token);
 
-                //Envio de SMS (+5571985284838)
+                //Envio de SMS via emulador
                 telefoneCompleto = "5554";
                 boolean enviadoSMS = enviaSMS ("+" + telefoneCompleto, mensagemEnvio);
 
@@ -79,11 +78,6 @@ public class ValidacaoActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(ValidacaoActivity.this,"Problema em enviar o SMS, tente novamente.",Toast.LENGTH_LONG).show();
                 }
-
-                /*
-                HashMap<String, String> usuario = preferencias.getDadosUsuario();
-                Log.i("TOKEN", "NOME:"+ usuario.get("nome")+ "FONE:" + usuario.get("telefone"));
-                 */
             }
         });
     }

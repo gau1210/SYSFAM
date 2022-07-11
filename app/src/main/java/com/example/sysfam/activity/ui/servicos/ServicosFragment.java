@@ -3,8 +3,6 @@ package com.example.sysfam.activity.ui.servicos;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-
-import android.preference.Preference;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +11,7 @@ import android.widget.ListView;
 
 import com.example.sysfam.R;
 import com.example.sysfam.config.ConfiguracaoFirebase;
-import com.example.sysfam.helper.Preferencias;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
