@@ -16,13 +16,19 @@
         android:theme="@style/Theme.SYSFAM"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ValidadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ValidacaoActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.CadastroUsuarioActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.LoginActivity"
-            android:exported="true" />
-        <activity
             android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
             android:exported="true"
             android:label="@string/title_activity_navegacao"
             android:theme="@style/Theme.SYSFAM.NoActionBar">
@@ -33,4 +39,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
