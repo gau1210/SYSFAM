@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void deslogarUsuario(){
+
         usuarioAutenticacao.signOut();
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);

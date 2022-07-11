@@ -18,20 +18,21 @@
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/activity_cadastro_usuario.xml" value="0.33" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/activity_cunsulta.xml" value="0.1" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/activity_main.xml" value="0.1037037037037037" />
+        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/activity_main.xml" value="0.9" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/activity_navegacao.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/activity_validacao.xml" value="0.22" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/activity_validador.xml" value="0.33" />
-        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/app_bar_navegacao.xml" value="0.11865942028985507" />
+        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/app_bar_navegacao.xml" value="0.18258426966292135" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/content_navegacao.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/fragment_home.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/fragment_principal.xml" value="0.25" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/fragment_sair.xml" value="0.33" />
-        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/fragment_servicos.xml" value="0.1" />
-        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/fragment_sobre.xml" value="0.1" />
+        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/fragment_servicos.xml" value="0.22" />
+        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/fragment_sobre.xml" value="0.25" />
+        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/lista_ubs.xml" value="0.1757852077001013" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/lista_upsd.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/nav_header_navegacao.xml" value="0.33" />
-        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/toolbar.xml" value="0.25" />
+        <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/layout/toolbar.xml" value="0.33" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/menu/menu_main.xml" value="0.21705426356589147" />
         <entry key="..\:/Users/glaub/AndroidStudioProjects/SYSFAM/app/src/main/res/menu/navegacao.xml" value="0.36666666666666664" />
