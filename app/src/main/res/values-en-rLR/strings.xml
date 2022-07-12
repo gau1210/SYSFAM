@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">SYSFAM</string>
+    <string name="botao_acessar" translatable="false">Access</string>
+    <string name="botao_cadastrar" translatable="false">REGISTER</string>
+    <string name="item_configuracao" translatable="false">Configuration</string>
+    <string name="item_sair" translatable="false">Exit</string>
+    <string name="title_activity_navegacao" translatable="false">Navigation</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string name="menu_principal" translatable="false">Primary</string>
+    <string name="menu_servicos" translatable="false">Services</string>
+    <string name="menu_clientes" translatable="false">Clients</string>
+    <string name="navegacao_titulo" translatable="false">My name</string>
+    <string name="navegacao_email" translatable="false">My email</string>
+    <string name="menu_manage" translatable="false">Contacts</string>
+    <string name="menu_sobre" translatable="false">Upon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="item_buscar" translatable="false">Search</string>
+</resources>

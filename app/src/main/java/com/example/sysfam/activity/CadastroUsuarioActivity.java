@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.sysfam.R;
 import com.example.sysfam.config.ConfiguracaoFirebase;
 import com.example.sysfam.helper.Base64Custom;
+import com.example.sysfam.helper.Preferencias;
 import com.example.sysfam.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -64,6 +65,9 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                     String identificadorUsuario = Base64Custom.codificarBase64( usuario.getEmail() );
                     usuario.setId( identificadorUsuario );
                     usuario.salvar();
+
+                    Preferencias preferencias = new Preferencias(CadastroUsuarioActivity.this);
+                    preferencias.salvarDados(identificadorUsuario);
 
                     abrirLoginUsuario();
 
