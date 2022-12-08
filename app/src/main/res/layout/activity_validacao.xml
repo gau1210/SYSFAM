@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ValidacaoActivity">
+
+    <EditText
+        android:id="@+id/edit_cod_area"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="71"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/edit_telefone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_cod_pais"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
+
+    <Button
+        android:id="@+id/bt_validar"
+        android:layout_width="185dp"
+        android:layout_height="53dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_cod_area"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <EditText
+        android:id="@+id/edit_telefone"
+        android:layout_width="260dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="98528-4838"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_cod_area"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
+
+    <EditText
+        android:id="@+id/edit_nome"
+        android:layout_width="369dp"
+        android:layout_height="76dp"
+        android:ems="10"
+        android:hint="Digite seu nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/edit_cod_pais"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="+55"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/edit_cod_area"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="466dp"
+        android:layout_height="285dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

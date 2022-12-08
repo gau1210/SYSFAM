@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SYSFAM</string>
+    <string name="botao_acessar">Acessar</string>
+    <string name="botao_cadastrar">CADASTRAR</string>
+    <string name="item_configuracao">Configuração</string>
+    <string name="item_sair">Sair</string>
+    <string name="title_activity_navegacao">Navegacao</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_principal">Principal</string>
+    <string name="menu_servicos">Serviços</string>
+    <string name="menu_clientes">Clientes</string>
+    <string name="navegacao_titulo">Meu nome</string>
+    <string name="navegacao_email">Meu e-mail</string>
+    <string name="menu_manage">Contatos</string>
+    <string name="menu_sobre">Sobre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_buscar">Buscar</string>
+</resources>
