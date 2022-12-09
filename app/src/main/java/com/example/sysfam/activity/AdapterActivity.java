@@ -15,10 +15,10 @@ import java.util.List;
 
 public class AdapterActivity extends RecyclerView.Adapter{
 
-    List<UBS> ubs;
+    List<UBS> list;
 
-    public AdapterActivity(List<UBS> ubs) {
-        this.ubs = ubs;
+    public AdapterActivity(List<UBS> list) {
+        this.list = list;
     }
 
     @NonNull
@@ -33,14 +33,14 @@ public class AdapterActivity extends RecyclerView.Adapter{
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
         ViewHolderClass vhClass = (ViewHolderClass) holder;
-        UBS produto = ubs.get(position);
-        vhClass.tvNome.setText(produto.getNome());
-        vhClass.tvStatus.setText(produto.getStatus());
+        UBS ubs = list.get(position);
+        vhClass.tvNome.setText(ubs.getNome());
+        vhClass.tvStatus.setText(ubs.getStatus());
     }
 
     @Override
     public int getItemCount() {
-        return ubs.size();
+        return list.size();
     }
     public class ViewHolderClass extends RecyclerView.ViewHolder{
         TextView tvNome;

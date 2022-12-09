@@ -22,12 +22,11 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 
 public class PrincipalFragment extends Fragment {
 
-    List<UBS> ubs;
+    List<UBS> list;
     RecyclerView recyclerView;
     AdapterActivity adapterActivity;
     DatabaseReference databaseReference;
@@ -41,7 +40,7 @@ public class PrincipalFragment extends Fragment {
         //searchView = view.findViewById(R.id.seachView);
 
         recyclerView = view.findViewById(R.id.recyclerView);
-        ubs = new ArrayList<>();
+        list = new ArrayList<>();
         databaseReference = ConfiguracaoFirebase.getFirebase();
         databaseReference.child("UBS").addListenerForSingleValueEvent(new ValueEventListener() {
 
@@ -49,9 +48,9 @@ public class PrincipalFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dn:snapshot.getChildren()){
                     UBS u = dn.getValue(UBS.class);
-                    ubs.add(u);
+                    list.add(u);
                 }
-                adapterActivity = new AdapterActivity(ubs);
+                adapterActivity = new AdapterActivity(list);
                 recyclerView.setAdapter(adapterActivity);
             }
 
