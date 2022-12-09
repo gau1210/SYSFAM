@@ -1,11 +1,11 @@
 package com.example.sysfam.model;
 
-public class UBS {
+public class Remedios {
 
     private String Nome;
     private String Status;
 
-    public UBS() {
+    public Remedios() {
     }
 
     public String getNome() {

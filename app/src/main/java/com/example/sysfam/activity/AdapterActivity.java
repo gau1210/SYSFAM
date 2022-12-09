@@ -9,15 +9,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sysfam.R;
-import com.example.sysfam.model.UBS;
+import com.example.sysfam.model.Remedios;
 
 import java.util.List;
 
 public class AdapterActivity extends RecyclerView.Adapter{
 
-    List<UBS> list;
+    List<Remedios> list;
 
-    public AdapterActivity(List<UBS> list) {
+    public AdapterActivity(List<Remedios> list) {
         this.list = list;
     }
 
@@ -33,9 +33,9 @@ public class AdapterActivity extends RecyclerView.Adapter{
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
         ViewHolderClass vhClass = (ViewHolderClass) holder;
-        UBS ubs = list.get(position);
-        vhClass.tvNome.setText(ubs.getNome());
-        vhClass.tvStatus.setText(ubs.getStatus());
+        Remedios remedios = list.get(position);
+        vhClass.tvNome.setText(remedios.getNome());
+        vhClass.tvStatus.setText(remedios.getStatus());
     }
 
     @Override

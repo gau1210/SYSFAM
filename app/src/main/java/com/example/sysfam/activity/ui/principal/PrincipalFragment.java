@@ -14,7 +14,7 @@ import android.widget.SearchView;
 import com.example.sysfam.R;
 import com.example.sysfam.activity.AdapterActivity;
 import com.example.sysfam.config.ConfiguracaoFirebase;
-import com.example.sysfam.model.UBS;
+import com.example.sysfam.model.Remedios;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 public class PrincipalFragment extends Fragment {
 
-    ArrayList<UBS> list;
+    ArrayList<Remedios> list;
     RecyclerView recyclerView;
     DatabaseReference databaseReference;
     SearchView searchView;
@@ -44,7 +44,7 @@ public class PrincipalFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dados:snapshot.getChildren()){
-                list.add(dados.getValue(UBS.class));
+                list.add(dados.getValue(Remedios.class));
 
                 }
                 AdapterActivity adapterActivity = new AdapterActivity(list);
@@ -72,8 +72,8 @@ public class PrincipalFragment extends Fragment {
         return view;
     }
     private void search(String str) {
-        ArrayList<UBS> myList = new ArrayList<>();
-        for (UBS object : list){
+        ArrayList<Remedios> myList = new ArrayList<>();
+        for (Remedios object : list){
             if (object.getNome().toLowerCase().toLowerCase().contains(str.toLowerCase())){
                 myList.add(object);
             }
