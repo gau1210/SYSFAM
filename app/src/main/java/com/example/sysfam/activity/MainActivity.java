@@ -27,17 +27,12 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 
-import com.google.firebase.database.DatabaseReference;
-
-
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityNavegacaoBinding binding;
     private FirebaseAuth usuarioAutenticacao;
     private Toolbar toolbar;
-    private String identificadorRemedio;
-    private DatabaseReference firebase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

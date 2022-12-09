@@ -21,14 +21,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.List;
-
 
 public class PrincipalFragment extends Fragment {
 
-    List<UBS> list;
+    ArrayList<UBS> list;
     RecyclerView recyclerView;
-    AdapterActivity adapterActivity;
     DatabaseReference databaseReference;
     SearchView searchView;
 
@@ -37,20 +34,20 @@ public class PrincipalFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_principal, container, false);
 
-        //searchView = view.findViewById(R.id.seachView);
-
+        searchView = view.findViewById(R.id.seachView);
         recyclerView = view.findViewById(R.id.recyclerView);
+
         list = new ArrayList<>();
         databaseReference = ConfiguracaoFirebase.getFirebase();
         databaseReference.child("UBS").addListenerForSingleValueEvent(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot dn:snapshot.getChildren()){
-                    UBS u = dn.getValue(UBS.class);
-                    list.add(u);
+                for (DataSnapshot dados:snapshot.getChildren()){
+                list.add(dados.getValue(UBS.class));
+
                 }
-                adapterActivity = new AdapterActivity(list);
+                AdapterActivity adapterActivity = new AdapterActivity(list);
                 recyclerView.setAdapter(adapterActivity);
             }
 
@@ -59,36 +56,29 @@ public class PrincipalFragment extends Fragment {
 
             }
         });
-       /* if (searchView != null){
+        if (searchView != null){
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
                 public boolean onQueryTextSubmit(String s) {
                     return false;
                 }
-
                 @Override
                 public boolean onQueryTextChange(String s) {
                     search(s);
                     return true;
                 }
             });
-        }*/
+        }
         return view;
-
     }
-    /*
-
     private void search(String str) {
         ArrayList<UBS> myList = new ArrayList<>();
-
-        for (UBS object : ubs){
-            if (object.getNome().toLowerCase().toLowerCase().contains(str.toLowerCase(Locale.ROOT))){
-
+        for (UBS object : list){
+            if (object.getNome().toLowerCase().toLowerCase().contains(str.toLowerCase())){
                 myList.add(object);
-
             }
         }
         AdapterActivity adapterActivity = new AdapterActivity(myList);
         recyclerView.setAdapter(adapterActivity);
-    }*/
+    }
 }

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activity.ui.principal.PrincipalFragment" >
-    <androidx.appcompat.widget.SearchView
+    <SearchView
         android:id="@+id/seachView"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
